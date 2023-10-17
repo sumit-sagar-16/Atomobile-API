@@ -5,6 +5,7 @@ const app = express();
 
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
+mongoose.connect(process.env.MONGODB_URI || 'your-fallback-connection-string', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 //routes
