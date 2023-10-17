@@ -16,7 +16,7 @@ app.get('/',(req, res) => {
 
 
 
-/////////////---------to post product
+////////////---------to post product
 
 app.post('/products', async(req, res) => {
     try {
